@@ -63,6 +63,28 @@ Map<String, num> medidas = {
   'A15': 3.0,
 };
 
+void CalculaMedidaBMP2Imagem6(num valor) {
+  var valorImagem6 = valor;
+  var resultadoImagem6 = Calculadora.CalculaMedida(176, 190, valorImagem6);
+  print(Calculadora.FormataCalculo([
+    'BMP-2',
+    valorImagem6.toString(),
+    resultadoImagem6.toString(),
+    resultadoImagem6.round().toString()
+  ]));
+}
+
+void CalculaMedidaBMP2Imagem5(num valor) {
+  var valorImagem5 = valor;
+  var resultadoImagem5 = Calculadora.CalculaMedida(176, 190, valorImagem5);
+  print(Calculadora.FormataCalculo([
+    'BMP-2',
+    valorImagem5.toString(),
+    resultadoImagem5.toString(),
+    resultadoImagem5.round().toString()
+  ]));
+}
+
 main(List<String> args) {
   // num valor = 20;
   // num resultado = Calculadora.CalculaMedida(91, 277, valor);
@@ -85,23 +107,8 @@ main(List<String> args) {
   // a-b
   // c-x
   // x = (b*c)/a
-  var valorImagem6 = 131;
-  var resultadoImagem6 = Calculadora.CalculaMedida(176, 190, valorImagem6);
-  print(Calculadora.FormataCalculo([
-    'BMP-2',
-    valorImagem6.toString(),
-    resultadoImagem6.toString(),
-    resultadoImagem6.round().toString()
-  ]));
-
-  var valorImagem5 = 131;
-  var resultadoImagem5 = Calculadora.CalculaMedida(176, 190, valorImagem5);
-  print(Calculadora.FormataCalculo([
-    'BMP-2',
-    valorImagem5.toString(),
-    resultadoImagem5.toString(),
-    resultadoImagem5.round().toString()
-  ]));
+  // CalculaMedidaBMP2Imagem6(131);
+  CalculaMedidaBMP2Imagem5(29);
 }
 
 Map<int, String> medidasBMP2 = {
