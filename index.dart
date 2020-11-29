@@ -85,14 +85,22 @@ main(List<String> args) {
   // a-b
   // c-x
   // x = (b*c)/a
-  var nome = 'BMP-2';
-  var valor = 40;
-  var resultado = Calculadora.CalculaMedida(176, 190, valor);
+  var valorImagem6 = 131;
+  var resultadoImagem6 = Calculadora.CalculaMedida(176, 190, valorImagem6);
   print(Calculadora.FormataCalculo([
-    nome,
-    valor.toString(),
-    resultado.toString(),
-    resultado.round().toString()
+    'BMP-2',
+    valorImagem6.toString(),
+    resultadoImagem6.toString(),
+    resultadoImagem6.round().toString()
+  ]));
+
+  var valorImagem5 = 131;
+  var resultadoImagem5 = Calculadora.CalculaMedida(176, 190, valorImagem5);
+  print(Calculadora.FormataCalculo([
+    'BMP-2',
+    valorImagem5.toString(),
+    resultadoImagem5.toString(),
+    resultadoImagem5.round().toString()
   ]));
 }
 
@@ -107,5 +115,10 @@ Map<int, String> medidasBMP2 = {
   7: 'BMP-2 -> 6 -> 6.48 -> 6',
   8: 'BMP-2 -> 30 -> 32.39 -> 32',
   9: 'BMP-2 -> 26 -> 28.07 -> 28',
-  10: 'BMP-2 -> 40 -> 43.18 -> 43'
+  10: 'BMP-2 -> 40 -> 43.18 -> 43',
+  11: 'BMP-2 -> 42 -> 45.34 -> 45',
+  12: 'BMP-2 -> 41 -> 44.26 -> 44',
+  13: 'BMP-2 -> 27 -> 29.15 -> 29 ou 30',
+  14: 'BMP-2 -> 6 -> 6.48 -> 6 ou 7',
+  15: 'BMP-2 -> 131 -> 141.42 -> 141',
 };
