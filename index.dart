@@ -1,5 +1,13 @@
 import 'dart:math';
 
+import 'CalculaSoma.dart';
+
+void ExibeConta() {
+  CalculaSoma x = new CalculaSoma();
+  num y = x.soma(1, 1);
+  print(y.toString());
+}
+
 void CalculaExemplo() {
   medidas.forEach((key, value) {
     print(Calculadora.FormatadorFinal(
@@ -15,7 +23,7 @@ class Calculadora {
     return num.parse(((b * c) / a).toStringAsFixed(2));
   }
 
-  static num PreimetroCirculo(num valor) {
+  static num PerimetroCirculo(num valor) {
     return (2 * pi * valor);
   }
 
@@ -85,6 +93,18 @@ void CalculaMedidaBMP2Imagem5(num valor) {
   ]));
 }
 
+void FormataPerimetroCirculo(num x) {
+  num valor = x;
+  var resultado = Calculadora.PerimetroCirculo(valor);
+  var texto = Calculadora.FormataCalculo([
+    'BMP-2',
+    valor.toString(),
+    resultado.toStringAsFixed(2),
+    resultado.round().toString()
+  ]);
+  print(texto);
+}
+
 main(List<String> args) {
   // num valor = 20;
   // num resultado = Calculadora.CalculaMedida(91, 277, valor);
@@ -108,24 +128,32 @@ main(List<String> args) {
   // c-x
   // x = (b*c)/a
   // CalculaMedidaBMP2Imagem6(131);
-  CalculaMedidaBMP2Imagem5(29);
+  CalculaMedidaBMP2Imagem5(22);
+  // FormataPerimetroCirculo(22.5);
 }
 
 Map<int, String> medidasBMP2 = {
-  0: 'BMP-2 -> 32 -> 29.64 -> 30',
-  1: 'BMP-2 -> 32 -> 34.55 -> 35',
-  2: 'BMP-2 -> 8 -> 8.64 -> 9',
-  3: 'BMP-2 -> 9 -> 9.72 -> 10',
-  4: 'BMP-2 -> 23 -> 24.83 -> 25',
-  5: 'BMP-2 -> 34 -> 36.7 -> 37',
-  6: 'BMP-2 -> 4 -> 4.32 -> 4',
-  7: 'BMP-2 -> 6 -> 6.48 -> 6',
-  8: 'BMP-2 -> 30 -> 32.39 -> 32',
-  9: 'BMP-2 -> 26 -> 28.07 -> 28',
-  10: 'BMP-2 -> 40 -> 43.18 -> 43',
-  11: 'BMP-2 -> 42 -> 45.34 -> 45',
-  12: 'BMP-2 -> 41 -> 44.26 -> 44',
-  13: 'BMP-2 -> 27 -> 29.15 -> 29 ou 30',
-  14: 'BMP-2 -> 6 -> 6.48 -> 6 ou 7',
-  15: 'BMP-2 -> 131 -> 141.42 -> 141',
+  0: 'BMP-2 Imagem 6 -> 32 -> 29.64 -> 30',
+  1: 'BMP-2 Imagem 6 -> 32 -> 34.55 -> 35',
+  2: 'BMP-2 Imagem 6 -> 8 -> 8.64 -> 9',
+  3: 'BMP-2 Imagem 6 -> 9 -> 9.72 -> 10',
+  4: 'BMP-2 Imagem 6 -> 23 -> 24.83 -> 25',
+  5: 'BMP-2 Imagem 6 -> 34 -> 36.7 -> 37',
+  6: 'BMP-2 Imagem 6 -> 4 -> 4.32 -> 4',
+  7: 'BMP-2 Imagem 6 -> 6 -> 6.48 -> 6',
+  8: 'BMP-2 Imagem 6 -> 30 -> 32.39 -> 32',
+  9: 'BMP-2 Imagem 6 -> 26 -> 28.07 -> 28',
+  10: 'BMP-2 Imagem 6 -> 40 -> 43.18 -> 43',
+  11: 'BMP-2 Imagem 6 -> 42 -> 45.34 -> 45',
+  12: 'BMP-2 Imagem 6 -> 41 -> 44.26 -> 44',
+  13: 'BMP-2 Imagem 6 -> 27 -> 29.15 -> 29 ou 30',
+  14: 'BMP-2 Imagem 6 -> 6 -> 6.48 -> 6 ou 7',
+  15: 'BMP-2 Imagem 6 -> 131 -> 141.42 -> 141',
+  16: 'BMP-2 Imagem 5 -> 28 -> 30.23 -> 30',
+  17: 'BMP-2 Imagem 5 -> 3 -> 3.24 -> 3',
+  18: 'BMP-2 Imagem 5 -> 16 -> 17.27 -> 17',
+  19: 'BMP-2 Imagem 5 -> 14 -> 15.11 -> 15',
+  20: 'BMP-2 Imagem 5 -> 10 -> 10.8 -> 11',
+  21: 'BMP-2 Imagem 5 -> 3 -> 3.24 -> 3',
+  22: 'BMP-2 Circulo -> 22.5 -> 141.37 -> 141',
 };
