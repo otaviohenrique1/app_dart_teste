@@ -27,7 +27,7 @@ class Calculadora {
     return (2 * pi * valor);
   }
 
-  static num teorema_de_pitagoras(num cateto1, num cateto2) {
+  static num Teorema_de_Pitagoras(num cateto1, num cateto2) {
     return sqrt((pow(cateto1, 2) + pow(cateto2, 2)));
   }
 
@@ -71,6 +71,18 @@ Map<String, num> medidas = {
   'A15': 3.0,
 };
 
+void FormataPerimetroCirculo(num x) {
+  num valor = x;
+  var resultado = Calculadora.PerimetroCirculo(valor);
+  var texto = Calculadora.FormataCalculo([
+    'BMP-2',
+    valor.toString(),
+    resultado.toStringAsFixed(2),
+    resultado.round().toString()
+  ]);
+  print(texto);
+}
+
 void CalculaMedidaBMP2Imagem6(num valor) {
   var valorImagem6 = valor;
   var resultadoImagem6 = Calculadora.CalculaMedida(176, 190, valorImagem6);
@@ -93,19 +105,30 @@ void CalculaMedidaBMP2Imagem5(num valor) {
   ]));
 }
 
-void FormataPerimetroCirculo(num x) {
-  num valor = x;
-  var resultado = Calculadora.PerimetroCirculo(valor);
-  var texto = Calculadora.FormataCalculo([
-    'BMP-2',
-    valor.toString(),
-    resultado.toStringAsFixed(2),
-    resultado.round().toString()
-  ]);
-  print(texto);
+void CalculaMedidaBMP2IBMP1(num valor) {
+  var valorImagemBMP2BMP1 = valor;
+  var imagemA1 = 176;
+  var imagemA5 = 160;
+  var resultadoImagemBMP2BMP1 =
+      Calculadora.CalculaMedida(imagemA1, 190, valorImagemBMP2BMP1);
+  print(Calculadora.FormataCalculo([
+    'BMP-1',
+    valorImagemBMP2BMP1.toString(),
+    resultadoImagemBMP2BMP1.toString(),
+    resultadoImagemBMP2BMP1.round().toString()
+  ]));
 }
 
 main(List<String> args) {
+  // a-b
+  // c-x
+  // x = (b*c)/a
+  // CalculaMedidaBMP2Imagem6(131);
+  CalculaMedidaBMP2Imagem5(1);
+  // FormataPerimetroCirculo(22.5);
+  // print(Calculadora.Teorema_de_Pitagoras(4, 10).round());
+  // CalculaMedidaBMP2IBMP1(40);
+
   // num valor = 20;
   // num resultado = Calculadora.CalculaMedida(91, 277, valor);
   // num resultadoArredondado = resultado.round();
@@ -123,13 +146,6 @@ main(List<String> args) {
 
   // CalculaExemplo();
   // Calculadora.CalculaListaMedidas(medidas, 1018, 760);
-
-  // a-b
-  // c-x
-  // x = (b*c)/a
-  // CalculaMedidaBMP2Imagem6(131);
-  CalculaMedidaBMP2Imagem5(22);
-  // FormataPerimetroCirculo(22.5);
 }
 
 Map<int, String> medidasBMP2 = {
