@@ -124,8 +124,12 @@ main(List<String> args) {
   // c-x
   // x = (b*c)/a
   // CalculaMedidaBMP2Imagem6(131);
-  CalculaMedidaBMP2Imagem5(1);
-  // FormataPerimetroCirculo(22.5);
+  // CalculaMedidaBMP2Imagem5(54);
+  CalculaMedidaBMP2Imagem5(64);
+  // CalculaMedidaBMP2Imagem6(10);
+  // CalculaMedidaBMP2Imagem5(7);
+  // print((5 + 8 + 11 + 25 + 8 + 10 + 8 + 25 + 11 + 8 + 5).toString());
+  // FormataPerimetroCirculo(22);
   // print(Calculadora.Teorema_de_Pitagoras(4, 10).round());
   // CalculaMedidaBMP2IBMP1(40);
 
@@ -172,4 +176,8 @@ Map<int, String> medidasBMP2 = {
   20: 'BMP-2 Imagem 5 -> 10 -> 10.8 -> 11',
   21: 'BMP-2 Imagem 5 -> 3 -> 3.24 -> 3',
   22: 'BMP-2 Circulo -> 22.5 -> 141.37 -> 141',
+  23: 'BMP-2 Circulo -> 24.5 -> 153.94 -> 154',
+  24: 'BMP-2 Circulo -> 23 -> 144.51 -> 145',
+  25: 'BMP-2 Circulo -> 15 -> 94.25 -> 94',
+  26: 'BMP-2 Circulo -> 22 -> 138.23 -> 138',
 };
