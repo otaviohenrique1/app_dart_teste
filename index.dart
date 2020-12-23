@@ -1,19 +1,11 @@
 import 'dart:math';
 
-import 'CalculaSoma.dart';
-
-void ExibeConta() {
-  CalculaSoma x = new CalculaSoma();
-  num y = x.soma(1, 1);
-  print(y.toString());
-}
-
-void CalculaExemplo() {
-  medidas.forEach((key, value) {
-    print(Calculadora.FormatadorFinal(
-        value, Calculadora.CalculaMedida(1018, 760, value), key));
-  });
-}
+// void CalculaExemplo() {
+//   medidas.forEach((key, value) {
+//     print(Calculadora.FormatadorFinal(
+//         value, Calculadora.CalculaMedida(1018, 760, value), key));
+//   });
+// }
 
 class Calculadora {
   static num CalculaMedida(num a, num b, num c) {
@@ -108,7 +100,7 @@ void CalculaMedidaBMP2Imagem5(num valor) {
 void CalculaMedidaBMP2IBMP1(num valor) {
   var valorImagemBMP2BMP1 = valor;
   var imagemA1 = 176;
-  var imagemA5 = 160;
+  // var imagemA5 = 160;
   var resultadoImagemBMP2BMP1 =
       Calculadora.CalculaMedida(imagemA1, 190, valorImagemBMP2BMP1);
   print(Calculadora.FormataCalculo([
@@ -125,11 +117,11 @@ main(List<String> args) {
   // x = (b*c)/a
   // CalculaMedidaBMP2Imagem6(131);
   // CalculaMedidaBMP2Imagem5(54);
-  CalculaMedidaBMP2Imagem5(64);
-  // CalculaMedidaBMP2Imagem6(10);
+  // CalculaMedidaBMP2Imagem5(64);
+  CalculaMedidaBMP2Imagem6(88);
   // CalculaMedidaBMP2Imagem5(7);
   // print((5 + 8 + 11 + 25 + 8 + 10 + 8 + 25 + 11 + 8 + 5).toString());
-  // FormataPerimetroCirculo(22);
+  // FormataPerimetroCirculo(8);
   // print(Calculadora.Teorema_de_Pitagoras(4, 10).round());
   // CalculaMedidaBMP2IBMP1(40);
 
@@ -180,4 +172,5 @@ Map<int, String> medidasBMP2 = {
   24: 'BMP-2 Circulo -> 23 -> 144.51 -> 145',
   25: 'BMP-2 Circulo -> 15 -> 94.25 -> 94',
   26: 'BMP-2 Circulo -> 22 -> 138.23 -> 138',
+  27: 'BMP-2 Imagem 6 -> 88 -> 95.0 -> 95',
 };
