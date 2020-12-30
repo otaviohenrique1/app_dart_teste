@@ -115,10 +115,14 @@ main(List<String> args) {
   // a-b
   // c-x
   // x = (b*c)/a
-  // CalculaMedidaBMP2Imagem6(131);
-  // CalculaMedidaBMP2Imagem5(54);
-  // CalculaMedidaBMP2Imagem5(64);
-  CalculaMedidaBMP2Imagem6(88);
+  CalculaMedidaBMP2Imagem6(2);
+  // CalculaMedidaBMP2Imagem5(5);
+  // CalculaMedidaBMP2Imagem5(4);
+  // for (var i = 0; i <= 14; i++) {
+  // print(26 * i);
+  //   print(25.71428571428571 * i);
+  // }
+  // CalculaMedidaBMP2Imagem6(88);
   // CalculaMedidaBMP2Imagem5(7);
   // print((5 + 8 + 11 + 25 + 8 + 10 + 8 + 25 + 11 + 8 + 5).toString());
   // FormataPerimetroCirculo(8);
