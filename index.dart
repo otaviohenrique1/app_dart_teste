@@ -97,6 +97,17 @@ void CalculaMedidaBMP2Imagem5(num valor) {
   ]));
 }
 
+void CalculaMedidaBMP2Imagem8(num valor) {
+  var valorImagem8 = valor;
+  var resultadoImagem8 = Calculadora.CalculaMedida(188, 190, valorImagem8);
+  print(Calculadora.FormataCalculo([
+    'BMP-2',
+    valorImagem8.toString(),
+    resultadoImagem8.toString(),
+    resultadoImagem8.round().toString()
+  ]));
+}
+
 void CalculaMedidaBMP2IBMP1(num valor) {
   var valorImagemBMP2BMP1 = valor;
   var imagemA1 = 176;
@@ -115,9 +126,10 @@ main(List<String> args) {
   // a-b
   // c-x
   // x = (b*c)/a
-  CalculaMedidaBMP2Imagem6(2);
+  // CalculaMedidaBMP2Imagem6(6);
   // CalculaMedidaBMP2Imagem5(5);
   // CalculaMedidaBMP2Imagem5(4);
+  CalculaMedidaBMP2Imagem8(8);
   // for (var i = 0; i <= 14; i++) {
   // print(26 * i);
   //   print(25.71428571428571 * i);
