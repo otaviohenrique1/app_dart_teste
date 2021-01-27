@@ -129,7 +129,7 @@ main(List<String> args) {
   // CalculaMedidaBMP2Imagem6(6);
   // CalculaMedidaBMP2Imagem5(5);
   // CalculaMedidaBMP2Imagem5(4);
-  CalculaMedidaBMP2Imagem8(8);
+  CalculaMedidaBMP2Imagem8(4.5);
   // for (var i = 0; i <= 14; i++) {
   // print(26 * i);
   //   print(25.71428571428571 * i);
