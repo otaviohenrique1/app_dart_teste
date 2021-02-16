@@ -1,6 +1,7 @@
 import 'calculadora.dart';
 
 void CalculaMedidaSpahpanzerLuchs2(num valor_c) {
+  // Imagem da pçarte de baixo
   num valorImagem = valor_c;
   num resultadoImagem = Calculadora.CalculaMedida(136, 193, valorImagem);
   print(Calculadora.FormataCalculo([
