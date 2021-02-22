@@ -24,7 +24,7 @@ void CalculaMedidaSpahpanzerLuchs(num valor_c) {
 }
 
 main(List<String> args) {
-  CalculaMedidaSpahpanzerLuchs(3);
+  CalculaMedidaSpahpanzerLuchs(4);
   // print(13 + 22 + 13 + 44 + 14 + 21 + 21);
   // CalculaMedidaSpahpanzerLuchs2(8);
   // print((200 * 10) / 193);
