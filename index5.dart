@@ -24,11 +24,11 @@ void CalculaMedidaSpahpanzerLuchs(num valor_c) {
 }
 
 main(List<String> args) {
-  CalculaMedidaSpahpanzerLuchs(4);
+  CalculaMedidaSpahpanzerLuchs(27);
   // print(13 + 22 + 13 + 44 + 14 + 21 + 21);
   // CalculaMedidaSpahpanzerLuchs2(8);
   // print((200 * 10) / 193);
-  // print(Calculadora.Teorema_de_Pitagoras(4, 16).round().toStringAsFixed(2));
+  // print(Calculadora.Teorema_de_Pitagoras(4, 7).round().toStringAsFixed(2));
 }
 
 /*
