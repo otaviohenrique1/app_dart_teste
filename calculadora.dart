@@ -16,6 +16,21 @@ class Calculadora {
     return sqrt((pow(cateto1, 2) + pow(cateto2, 2)));
   }
 
+  static num Teorema_de_Pitagoras2({
+    num cateto1: 0,
+    num cateto2: 0,
+    num hipotenusa: 0,
+  }) {
+    if (hipotenusa == 0) {
+      return sqrt((pow(cateto1, 2) + pow(cateto2, 2)));
+    } else if (cateto1 == 0) {
+      return sqrt((pow(hipotenusa, 2) - pow(cateto2, 2)));
+    } else if (cateto2 == 0) {
+      return sqrt((pow(hipotenusa, 2) - pow(cateto1, 2)));
+    }
+    return 0;
+  }
+
   static String FormataCalculo(List<String> valor) {
     var resultado = valor.join(' -> ');
     return resultado;
