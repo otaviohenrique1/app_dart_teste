@@ -1,5 +1,22 @@
 import 'calculadora.dart';
 
+void CalculaMedidaSubmarinoOhio(num valor_c) {
+  /*
+    388 - 600
+    29  - x
+    x = (600*29)/388
+    x = 
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(388, 700, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Submarino Ohio',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 void CalculaMedidaSpahpanzerLuchs2(num valor_c) {
   // Imagem da parte de baixo
   // Zoom -> 33
@@ -25,6 +42,7 @@ void CalculaMedidaSpahpanzerLuchs(num valor_c) {
 }
 
 main(List<String> args) {
+  /* Spahpanzer Luchs */
   CalculaMedidaSpahpanzerLuchs(2);
   // CalculaMedidaSpahpanzerLuchs2(3);
   // print("Perimetro do circulo" + (2 * 3.1415 * 18).round().toStringAsFixed(2));
@@ -34,4 +52,8 @@ main(List<String> args) {
   // print(Calculadora.Teorema_de_Pitagoras2(hipotenusa: 5, cateto2: 4)
   //     .round()
   //     .toStringAsFixed(2));
+  /* ------------------------------ */
+  /* Submarino Ohio */
+  // CalculaMedidaSubmarinoOhio(29);
+  /* ------------------------------ */
 }
