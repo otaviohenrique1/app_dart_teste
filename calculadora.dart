@@ -51,4 +51,65 @@ class Calculadora {
           value, Calculadora.CalculaMedida(a, b, value), key));
     });
   }
+
+  static Map<dynamic, dynamic> teoremaDePitagoras3({
+    num cateto1 = 0,
+    num cateto2 = 0,
+    num hipotenusa = 0,
+  }) {
+    num resultado = 0;
+    String nomeCampo = '';
+
+    if (cateto1 == 0) {
+      nomeCampo = 'Cateto 1';
+      resultado = sqrt(pow(hipotenusa, 2) - pow(cateto2, 2));
+      return {
+        'nomeCampo': nomeCampo,
+        'resultado': resultado,
+      };
+    } else if (cateto2 == 0) {
+      nomeCampo = 'Cateto 2';
+      resultado = sqrt(pow(hipotenusa, 2) - pow(cateto1, 2));
+      return {
+        'nomeCampo': nomeCampo,
+        'resultado': resultado,
+      };
+    } else if (hipotenusa == 0) {
+      nomeCampo = 'Hipotenusa';
+      resultado = sqrt(pow(cateto1, 2) + pow(cateto2, 2));
+      return {
+        'nomeCampo': nomeCampo,
+        'resultado': resultado,
+      };
+    }
+    // nomeCampo = '';
+    return {
+      'nomeCampo': '',
+      'resultado': 0,
+    };
+  }
+
+  static List<dynamic> teoremaDePitagoras4({
+    num cateto1 = 0,
+    num cateto2 = 0,
+    num hipotenusa = 0,
+  }) {
+    num resultado = 0;
+    String nomeCampo = '';
+
+    if (cateto1 == 0) {
+      nomeCampo = 'Cateto 1';
+      resultado = sqrt(pow(hipotenusa, 2) - pow(cateto2, 2));
+      return [nomeCampo, resultado];
+    } else if (cateto2 == 0) {
+      nomeCampo = 'Cateto 2';
+      resultado = sqrt(pow(hipotenusa, 2) - pow(cateto1, 2));
+      return [nomeCampo, resultado];
+    } else if (hipotenusa == 0) {
+      nomeCampo = 'Hipotenusa';
+      resultado = sqrt(pow(cateto1, 2) + pow(cateto2, 2));
+      return [nomeCampo, resultado];
+    }
+    return ['', 0];
+  }
 }

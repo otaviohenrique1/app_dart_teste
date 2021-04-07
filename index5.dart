@@ -8,7 +8,8 @@ void CalculaMedidaSubmarinoOhio(num valor_c) {
     x = 
   */
   num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(388, 700, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(387, 700, valorImagem);
+  // num resultadoImagem = Calculadora.CalculaMedida(387, 600, valorImagem);
   print(Calculadora.FormataCalculo([
     'Submarino Ohio',
     valorImagem.toString(),
@@ -43,7 +44,7 @@ void CalculaMedidaSpahpanzerLuchs(num valor_c) {
 
 main(List<String> args) {
   /* Spahpanzer Luchs */
-  CalculaMedidaSpahpanzerLuchs(2);
+  CalculaMedidaSpahpanzerLuchs(31);
   // CalculaMedidaSpahpanzerLuchs2(3);
   // print("Perimetro do circulo" + (2 * 3.1415 * 18).round().toStringAsFixed(2));
   // print(13 + 22 + 13 + 44 + 14 + 21 + 21);
@@ -54,6 +55,6 @@ main(List<String> args) {
   //     .toStringAsFixed(2));
   /* ------------------------------ */
   /* Submarino Ohio */
-  // CalculaMedidaSubmarinoOhio(29);
+  // CalculaMedidaSubmarinoOhio(30);
   /* ------------------------------ */
 }
