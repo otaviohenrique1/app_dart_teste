@@ -44,7 +44,7 @@ void CalculaMedidaSpahpanzerLuchs(num valor_c) {
 
 main(List<String> args) {
   /* Spahpanzer Luchs */
-  CalculaMedidaSpahpanzerLuchs(31);
+  // CalculaMedidaSpahpanzerLuchs(3);
   // CalculaMedidaSpahpanzerLuchs2(3);
   // print("Perimetro do circulo" + (2 * 3.1415 * 18).round().toStringAsFixed(2));
   // print(13 + 22 + 13 + 44 + 14 + 21 + 21);
@@ -55,6 +55,6 @@ main(List<String> args) {
   //     .toStringAsFixed(2));
   /* ------------------------------ */
   /* Submarino Ohio */
-  // CalculaMedidaSubmarinoOhio(30);
+  CalculaMedidaSubmarinoOhio(5);
   /* ------------------------------ */
 }
