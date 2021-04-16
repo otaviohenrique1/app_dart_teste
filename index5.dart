@@ -3,9 +3,13 @@ import 'calculadora.dart';
 void CalculaMedidaSubmarinoOhio(num valor_c) {
   /*
     388 - 600
-    29  - x
-    x = (600*29)/388
-    x = 
+    y   - x
+    x = (600*y)/387
+  */
+  /*
+    387 - 700
+    y   - x
+    x = (700*y)/387
   */
   num valorImagem = valor_c;
   num resultadoImagem = Calculadora.CalculaMedida(387, 700, valorImagem);
@@ -55,6 +59,6 @@ main(List<String> args) {
   //     .toStringAsFixed(2));
   /* ------------------------------ */
   /* Submarino Ohio */
-  CalculaMedidaSubmarinoOhio(5);
+  CalculaMedidaSubmarinoOhio(30);
   /* ------------------------------ */
 }
