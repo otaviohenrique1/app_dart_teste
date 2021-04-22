@@ -1,7 +1,7 @@
 class Pessoa {
-  String _nome;
-  int _idade;
-  String _email;
+  late String _nome;
+  late int _idade;
+  late String _email;
 
   void set nome(String nome) {
     this._nome = nome;

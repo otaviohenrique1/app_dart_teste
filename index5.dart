@@ -59,6 +59,6 @@ main(List<String> args) {
   //     .toStringAsFixed(2));
   /* ------------------------------ */
   /* Submarino Ohio */
-  CalculaMedidaSubmarinoOhio(30);
+  CalculaMedidaSubmarinoOhio(2);
   /* ------------------------------ */
 }
