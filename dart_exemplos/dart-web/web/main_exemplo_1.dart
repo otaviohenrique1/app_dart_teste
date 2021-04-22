@@ -1,7 +1,7 @@
 import 'dart:html';
 
 void main() {
-  querySelector('#output').text = 'Elefantes';
+  querySelector('#output')!.text = 'Elefantes';
   // ignore: omit_local_variable_types
   ElementList divs = querySelectorAll('ul li');
 

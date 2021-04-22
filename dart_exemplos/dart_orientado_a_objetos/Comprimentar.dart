@@ -22,9 +22,10 @@ class Comprimentar {
   }
 
   // Metodo sem retorno
-  void sayHello3(String nome, [int idade = 0, String sobrenome]) {
+  void sayHello3(String nome, [int idade = 0, String sobrenome = '']) {
     String msg = 'Hello ' + nome;
 
+    // ignore: unnecessary_null_comparison
     if (sobrenome != null) {
       msg = msg + ' ' + sobrenome;
     }
@@ -37,9 +38,10 @@ class Comprimentar {
   }
 
   // Metodo sem retorno
-  void sayHello4(String nome, {int idade: 0, String sobrenome}) {
+  void sayHello4(String nome, {int idade: 0, String sobrenome: ''}) {
     String msg = 'Hello ' + nome;
 
+    // ignore: unnecessary_null_comparison
     if (sobrenome != null) {
       msg = msg + ' ' + sobrenome;
     }

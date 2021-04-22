@@ -4,7 +4,7 @@ void clickExample(MouseEvent event) {
   event.preventDefault();
 
   // ignore: omit_local_variable_types
-  Element ul = querySelector('ul');
+  Element ul = querySelector('ul')!;
 
   // ignore: omit_local_variable_types
   Element liCake = Element.html('<li class="blue">Curso de CakePHP</li>');
@@ -12,9 +12,9 @@ void clickExample(MouseEvent event) {
 }
 
 void main() {
-  querySelector('#output').text = 'Elefantes';
+  querySelector('#output')!.text = 'Elefantes';
   // ignore: omit_local_variable_types
-  Element ul = querySelector('ul');
+  Element ul = querySelector('ul')!;
 
   // ignore: omit_local_variable_types
   List cursos = [
@@ -45,5 +45,5 @@ void main() {
   link.text = 'Ir para o site';
   link.onClick.listen(clickExample);
 
-  querySelector('footer').children.add(link);
+  querySelector('footer')!.children.add(link);
 }

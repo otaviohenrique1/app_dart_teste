@@ -1,7 +1,7 @@
 import 'FormasGeometrica.dart';
 
 class Quadrado extends FormaGeometrica {
-  num largura, altura;
+  num largura = 0, altura = 0;
 
   Quadrado(num dimensao) {
     this.largura = dimensao;

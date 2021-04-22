@@ -1,7 +1,7 @@
 abstract class FormaGeometrica {
   // Interface do dart
 
-  String _tipo;
+  String _tipo = '';
 
   num area();
 

@@ -2,8 +2,8 @@ class Calculadora {
   final int a = 1;
   // final -> Parecido com uma constante, pois nao muda o valor atribuido
 
-  static int b;
-  static double salario;
+  static int b = 0;
+  static double salario = 0;
   // static -> nao precisa de instancia para ser chamada
 
   static const int c = 10;
