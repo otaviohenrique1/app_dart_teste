@@ -12,6 +12,10 @@ class Calculadora {
     return (2 * pi * valor);
   }
 
+  static String PerimetroCirculo2(num valor) {
+    return (2 * pi * valor).round().toStringAsFixed(2);
+  }
+
   static num Teorema_de_Pitagoras(num cateto1, num cateto2) {
     return sqrt((pow(cateto1, 2) + pow(cateto2, 2)));
   }
@@ -29,6 +33,10 @@ class Calculadora {
       return sqrt((pow(hipotenusa, 2) - pow(cateto1, 2)));
     }
     return 0;
+  }
+
+  static String Teorema_de_Pitagoras3(num cateto1, num cateto2) {
+    return sqrt((pow(cateto1, 2) + pow(cateto2, 2))).round().toStringAsFixed(2);
   }
 
   static String FormataCalculo(List<String> valor) {

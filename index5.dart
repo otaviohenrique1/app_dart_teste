@@ -50,15 +50,18 @@ main(List<String> args) {
   /* Spahpanzer Luchs */
   // CalculaMedidaSpahpanzerLuchs(3);
   // CalculaMedidaSpahpanzerLuchs2(3);
-  // print("Perimetro do circulo" + (2 * 3.1415 * 18).round().toStringAsFixed(2));
+  // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(2.5));
   // print(13 + 22 + 13 + 44 + 14 + 21 + 21);
   // print((200 * 10) / 193);
   // print(Calculadora.Teorema_de_Pitagoras(9, 16).round().toStringAsFixed(2));
   // print(Calculadora.Teorema_de_Pitagoras2(hipotenusa: 5, cateto2: 4)
   //     .round()
   //     .toStringAsFixed(2));
+  // print(Calculadora.Teorema_de_Pitagoras3(9, 16));
   /* ------------------------------ */
   /* Submarino Ohio */
-  CalculaMedidaSubmarinoOhio(2);
+  CalculaMedidaSubmarinoOhio(6);
+  // print(12.5 / 2);
+  // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(2.5));
   /* ------------------------------ */
 }
