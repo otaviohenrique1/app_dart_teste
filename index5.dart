@@ -60,7 +60,7 @@ main(List<String> args) {
   // print(Calculadora.Teorema_de_Pitagoras3(9, 16));
   /* ------------------------------ */
   /* Submarino Ohio */
-  CalculaMedidaSubmarinoOhio(6);
+  CalculaMedidaSubmarinoOhio(18);
   // print(12.5 / 2);
   // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(2.5));
   /* ------------------------------ */
