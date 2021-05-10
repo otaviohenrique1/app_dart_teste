@@ -60,8 +60,11 @@ main(List<String> args) {
   // print(Calculadora.Teorema_de_Pitagoras3(9, 16));
   /* ------------------------------ */
   /* Submarino Ohio */
-  CalculaMedidaSubmarinoOhio(18);
+  CalculaMedidaSubmarinoOhio(10);
   // print(12.5 / 2);
   // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(2.5));
   /* ------------------------------ */
+  // x^2 + 8x – 9 = 0 sao x1 = 1 e x2 = –9
+  // Map<String, num> resultado = Calculadora.equacao2Grau(a: 1, b: 8, c: -9);
+  // resultado.forEach((key, value) => print('$key => $value'));
 }
