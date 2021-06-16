@@ -152,4 +152,17 @@ class Calculadora {
     }
     return {"r": "Valor invalido"};
   }
+
+  static int geraNumero(int tamanho) {
+    return Random().nextInt(tamanho);
+  }
+
+  static String geraListaNumerosEmString(int tamanho) {
+    List<int> lista = [];
+    for (var i = 0; i < tamanho; i++) {
+      lista.add(Random().nextInt(10));
+    }
+    String texto = lista.join();
+    return texto;
+  }
 }
