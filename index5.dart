@@ -96,7 +96,7 @@ main(List<String> args) {
   // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(3.5));
   /* ------------------------------ */
   /* Monitor Classe Roberts */
-  CalculaMedidaMonitorClasseRoberts(6);
+  CalculaMedidaMonitorClasseRoberts(19);
   /* ------------------------------ */
   // x^2 + 8x – 9 = 0 sao x1 = 1 e x2 = –9
   // Map<String, num> resultado = Calculadora.equacao2Grau(a: 1, b: 8, c: -9);
