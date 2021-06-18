@@ -96,19 +96,19 @@ main(List<String> args) {
   // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(3.5));
   /* ------------------------------ */
   /* Monitor Classe Roberts */
-  // CalculaMedidaMonitorClasseRoberts(6);
+  CalculaMedidaMonitorClasseRoberts(6);
   /* ------------------------------ */
   // x^2 + 8x – 9 = 0 sao x1 = 1 e x2 = –9
   // Map<String, num> resultado = Calculadora.equacao2Grau(a: 1, b: 8, c: -9);
   // resultado.forEach((key, value) => print('$key => $value'));
   /* ------------------------------ */
-  print("Telefone => ${Calculadora.geraListaNumerosEmString(10)}");
-  print("Celeular => ${Calculadora.geraListaNumerosEmString(11)}");
-  print("CPF => ${Calculadora.geraListaNumerosEmString(11)}");
-  print("RG => ${Calculadora.geraListaNumerosEmString(9)}");
-  print("CNPJ => ${Calculadora.geraListaNumerosEmString(14)}");
-  print("CEP => ${Calculadora.geraListaNumerosEmString(8)}");
-  print("Senha => ${Calculadora.geraListaNumerosEmString(10)}");
+  // print("Telefone => ${Calculadora.geraListaNumerosEmString(10)}");
+  // print("Celeular => ${Calculadora.geraListaNumerosEmString(11)}");
+  // print("CPF => ${Calculadora.geraListaNumerosEmString(11)}");
+  // print("RG => ${Calculadora.geraListaNumerosEmString(9)}");
+  // print("CNPJ => ${Calculadora.geraListaNumerosEmString(14)}");
+  // print("CEP => ${Calculadora.geraListaNumerosEmString(8)}");
+  // print("Senha => ${Calculadora.geraListaNumerosEmString(10)}");
 }
 
 /*
