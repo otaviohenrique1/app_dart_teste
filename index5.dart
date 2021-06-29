@@ -96,7 +96,24 @@ main(List<String> args) {
   // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(3.5));
   /* ------------------------------ */
   /* Monitor Classe Roberts */
-  CalculaMedidaMonitorClasseRoberts(19);
+  CalculaMedidaMonitorClasseRoberts(7);
+  // print(Calculadora.CalculaMedida(208, 228.5, 6.5).toString());
+  // print(Calculadora.Teorema_de_Pitagoras4(234, 8));
+  // print(22.32 +
+  //     52.52 +
+  //     52.52 +
+  //     52.52 +
+  //     52.52 +
+  //     52.52 +
+  //     52.52 +
+  //     51.86 +
+  //     51.86 +
+  //     52.52 +
+  //     32.82 +
+  //     19.69 +
+  //     26.91 +
+  //     25.60);
+  // print(22 + 53 + 53 + 53 + 53 + 53 + 53 + 52 + 52 + 53 + 33 + 20 + 27 + 26);
   /* ------------------------------ */
   // x^2 + 8x – 9 = 0 sao x1 = 1 e x2 = –9
   // Map<String, num> resultado = Calculadora.equacao2Grau(a: 1, b: 8, c: -9);
@@ -118,4 +135,20 @@ main(List<String> args) {
   RG => 9 digitos => ##.###.###-#
   CNPJ => 14 digitos => ##.###.###/####-##
   CEP => 8 digitos => #####-###
+*/
+/*
+  00-01 -> 8.50 -> 22.32 -> 22
+  01-02 -> 20 -> 52.52 -> 53
+  02-03 -> 20 -> 52.52 -> 53
+  03-04 -> 20 -> 52.52 -> 53
+  04-05 -> 20 -> 52.52 -> 53
+  05-06 -> 20 -> 52.52 -> 53
+  06-07 -> 20 -> 52.52 -> 53
+  07-08 -> 19.75 -> 51.86 -> 52
+  08-09 -> 19.75 -> 51.86 -> 52
+  09-10 -> 20 -> 52.52 -> 53
+  10-11 -> 12.50 -> 32.82 -> 33
+  11-12 -> 7.50 -> 19.69 -> 20
+  12-13 -> 10.25 -> 26.91 -> 27
+  13-14 -> 9.75 -> 25.60 -> 26
 */

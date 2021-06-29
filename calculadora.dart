@@ -39,6 +39,10 @@ class Calculadora {
     return sqrt((pow(cateto1, 2) + pow(cateto2, 2))).round().toStringAsFixed(2);
   }
 
+  static String Teorema_de_Pitagoras4(num cateto1, num cateto2) {
+    return sqrt((pow(cateto1, 2) + pow(cateto2, 2))).toStringAsFixed(2);
+  }
+
   static String FormataCalculo(List<String> valor) {
     var resultado = valor.join(' -> ');
     return resultado;
