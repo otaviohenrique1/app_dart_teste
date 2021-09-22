@@ -76,6 +76,63 @@ void CalculaMedidaMonitorClasseRoberts(num valor_c) {
   ]));
 }
 
+void CalculaMedidaPanther2(num valor_c) {
+  /*
+    151 - 126
+    y   - x
+    x = (126*y)/151
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(126, 151, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Panther2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaPanther(num valor_c) {
+  /*
+    126 - 200
+    y   - x
+    x = (200*y)/120
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(126, 200, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Panther',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaJadgpanther(num valor_c) {
+  /*
+    172 - 200
+    y   - x
+    x = (200*y)/172
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(172, 200, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Jadgpanther',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 main(List<String> args) {
   /* Spahpanzer Luchs */
   // CalculaMedidaSpahpanzerLuchs(3);
@@ -95,25 +152,18 @@ main(List<String> args) {
   // print(12.5 / 2);
   // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(3.5));
   /* ------------------------------ */
+  /* Jadgpanther */
+  // CalculaMedidaJadgpanther(14);
+  /* ------------------------------ */
+  /* Panther */
+  // CalculaMedidaPanther(19.17);
+  // CalculaMedidaPanther2(16);
+  /* ------------------------------ */
   /* Monitor Classe Roberts */
-  CalculaMedidaMonitorClasseRoberts(7);
+  CalculaMedidaMonitorClasseRoberts(0.5);
+  // print('''${Calculadora.PerimetroCirculo(10)}''');
   // print(Calculadora.CalculaMedida(208, 228.5, 6.5).toString());
-  // print(Calculadora.Teorema_de_Pitagoras4(234, 8));
-  // print(22.32 +
-  //     52.52 +
-  //     52.52 +
-  //     52.52 +
-  //     52.52 +
-  //     52.52 +
-  //     52.52 +
-  //     51.86 +
-  //     51.86 +
-  //     52.52 +
-  //     32.82 +
-  //     19.69 +
-  //     26.91 +
-  //     25.60);
-  // print(22 + 53 + 53 + 53 + 53 + 53 + 53 + 52 + 52 + 53 + 33 + 20 + 27 + 26);
+  // print(Calculadora.Teorema_de_Pitagoras4(8, 1));
   /* ------------------------------ */
   // x^2 + 8x – 9 = 0 sao x1 = 1 e x2 = –9
   // Map<String, num> resultado = Calculadora.equacao2Grau(a: 1, b: 8, c: -9);
