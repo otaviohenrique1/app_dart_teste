@@ -114,6 +114,25 @@ void CalculaMedidaPanther(num valor_c) {
   ]));
 }
 
+void CalculaMedidaJadgpanther2(num valor_c) {
+  /*
+    126 - 172
+    y   - x
+    x = (172*y)/126
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(126, 172, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Jadgpanther2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 void CalculaMedidaJadgpanther(num valor_c) {
   /*
     172 - 200
@@ -153,14 +172,15 @@ main(List<String> args) {
   // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(3.5));
   /* ------------------------------ */
   /* Jadgpanther */
-  // CalculaMedidaJadgpanther(14);
+  CalculaMedidaJadgpanther(87);
+  // CalculaMedidaJadgpanther2(102);
   /* ------------------------------ */
   /* Panther */
   // CalculaMedidaPanther(19.17);
   // CalculaMedidaPanther2(16);
   /* ------------------------------ */
   /* Monitor Classe Roberts */
-  CalculaMedidaMonitorClasseRoberts(0.5);
+  // CalculaMedidaMonitorClasseRoberts(0.5);
   // print('''${Calculadora.PerimetroCirculo(10)}''');
   // print(Calculadora.CalculaMedida(208, 228.5, 6.5).toString());
   // print(Calculadora.Teorema_de_Pitagoras4(8, 1));
