@@ -86,7 +86,7 @@ void CalculaMedidaPanther2(num valor_c) {
     x = (b*c)/a
   */
   num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(126, 151, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(151, 126, valorImagem);
   print(Calculadora.FormataCalculo([
     'Panther2',
     valorImagem.toString(),
@@ -172,12 +172,12 @@ main(List<String> args) {
   // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(3.5));
   /* ------------------------------ */
   /* Jadgpanther */
-  CalculaMedidaJadgpanther(87);
-  // CalculaMedidaJadgpanther2(102);
+  // CalculaMedidaJadgpanther(87);
+  // CalculaMedidaJadgpanther2(117);
   /* ------------------------------ */
   /* Panther */
-  // CalculaMedidaPanther(19.17);
-  // CalculaMedidaPanther2(16);
+  CalculaMedidaPanther(57.5);
+  // CalculaMedidaPanther2(11.5);
   /* ------------------------------ */
   /* Monitor Classe Roberts */
   // CalculaMedidaMonitorClasseRoberts(0.5);
