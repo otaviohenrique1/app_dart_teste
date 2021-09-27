@@ -176,11 +176,11 @@ main(List<String> args) {
   // CalculaMedidaJadgpanther2(117);
   /* ------------------------------ */
   /* Panther */
-  CalculaMedidaPanther(57.5);
+  // CalculaMedidaPanther(49);
   // CalculaMedidaPanther2(11.5);
   /* ------------------------------ */
   /* Monitor Classe Roberts */
-  // CalculaMedidaMonitorClasseRoberts(0.5);
+  CalculaMedidaMonitorClasseRoberts(50);
   // print('''${Calculadora.PerimetroCirculo(10)}''');
   // print(Calculadora.CalculaMedida(208, 228.5, 6.5).toString());
   // print(Calculadora.Teorema_de_Pitagoras4(8, 1));
