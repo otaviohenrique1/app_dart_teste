@@ -172,18 +172,20 @@ main(List<String> args) {
   // print("Perimetro do circulo => " + Calculadora.PerimetroCirculo2(3.5));
   /* ------------------------------ */
   /* Jadgpanther */
-  // CalculaMedidaJadgpanther(87);
-  // CalculaMedidaJadgpanther2(117);
+  // 13.5
+  // 19.5
+  CalculaMedidaJadgpanther(23.72);
+  // CalculaMedidaJadgpanther2(109);
   /* ------------------------------ */
   /* Panther */
-  // CalculaMedidaPanther(49);
-  // CalculaMedidaPanther2(11.5);
+  // CalculaMedidaPanther(46);
+  // CalculaMedidaPanther2(51);
   /* ------------------------------ */
   /* Monitor Classe Roberts */
-  CalculaMedidaMonitorClasseRoberts(50);
+  // CalculaMedidaMonitorClasseRoberts(50);
   // print('''${Calculadora.PerimetroCirculo(10)}''');
   // print(Calculadora.CalculaMedida(208, 228.5, 6.5).toString());
-  // print(Calculadora.Teorema_de_Pitagoras4(8, 1));
+  // print(Calculadora.Teorema_de_Pitagoras4(13.5, 19.5));
   /* ------------------------------ */
   // x^2 + 8x – 9 = 0 sao x1 = 1 e x2 = –9
   // Map<String, num> resultado = Calculadora.equacao2Grau(a: 1, b: 8, c: -9);
