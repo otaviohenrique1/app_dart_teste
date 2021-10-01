@@ -136,12 +136,10 @@ void CalculaMedidaTiger2(num valor_c) {
 main(List<String> args) {
   /* ------------------------------ */
   /* Tiger */
-  CalculaMedidaTiger(37);
+  CalculaMedidaTiger(18);
   // CalculaMedidaTiger2(32.5);
   /* ------------------------------ */
   /* Jadgpanther */
-  // 13.5
-  // 19.5
   // CalculaMedidaJadgpanther(23.72);
   // CalculaMedidaJadgpanther2(109);
   /* ------------------------------ */
