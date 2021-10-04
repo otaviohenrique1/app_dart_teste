@@ -1,22 +1,9 @@
 import 'calculadora.dart';
 
-void CalculaMedidaMonitorClasseRoberts(num valor_c) {
-  /*
-    228.5 - 600
-    y     - x
-    x = (600*y)/228.5
-    a - b
-    c - x
-    x = (b*c)/a
-  */
-  num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(228.5, 600, valorImagem);
-  print(Calculadora.FormataCalculo([
-    'Monitor Classe Roberts',
-    valorImagem.toString(),
-    resultadoImagem.toString(),
-    resultadoImagem.round().toString()
-  ]));
+void CalculaPerimetroCirculo(num valor) {
+  num perimetroCirculo = Calculadora.PerimetroCirculo(valor);
+  String resultadoImagem = perimetroCirculo.round().toString();
+  print(resultadoImagem);
 }
 
 void CalculaMedidaPanther2(num valor_c) {
@@ -31,7 +18,7 @@ void CalculaMedidaPanther2(num valor_c) {
   num valorImagem = valor_c;
   num resultadoImagem = Calculadora.CalculaMedida(151, 126, valorImagem);
   print(Calculadora.FormataCalculo([
-    'Panther2',
+    'Panther imagem 2',
     valorImagem.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
@@ -69,7 +56,7 @@ void CalculaMedidaJadgpanther2(num valor_c) {
   num valorImagem = valor_c;
   num resultadoImagem = Calculadora.CalculaMedida(126, 172, valorImagem);
   print(Calculadora.FormataCalculo([
-    'Jadgpanther2',
+    'Jadgpanther imagem 2',
     valorImagem.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
@@ -89,6 +76,25 @@ void CalculaMedidaJadgpanther(num valor_c) {
   num resultadoImagem = Calculadora.CalculaMedida(172, 200, valorImagem);
   print(Calculadora.FormataCalculo([
     'Jadgpanther',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaTiger17(num valor_c) {
+  /*
+    170 - 104
+    y   - x
+    x = (104*y)/170
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(170, 104, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Tiger imagem 17',
     valorImagem.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
@@ -126,7 +132,26 @@ void CalculaMedidaTiger2(num valor_c) {
   num valorImagem = valor_c;
   num resultadoImagem = Calculadora.CalculaMedida(104, 119, valorImagem);
   print(Calculadora.FormataCalculo([
-    'Tiger2',
+    'Tiger imagem 2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaTiger3(num valor_c) {
+  /*
+    102 - 119
+    y   - x
+    x = (119*y)/104
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(102, 119, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Tiger imagem 3',
     valorImagem.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
@@ -136,8 +161,12 @@ void CalculaMedidaTiger2(num valor_c) {
 main(List<String> args) {
   /* ------------------------------ */
   /* Tiger */
-  CalculaMedidaTiger(18);
-  // CalculaMedidaTiger2(32.5);
+  CalculaMedidaTiger(17);
+  // CalculaMedidaTiger2(15);
+  // CalculaMedidaTiger3(3.5);
+  // CalculaMedidaTiger17(8);
+  /* ------------------------------ */
+  // CalculaPerimetroCirculo(23);
   /* ------------------------------ */
   /* Jadgpanther */
   // CalculaMedidaJadgpanther(23.72);
