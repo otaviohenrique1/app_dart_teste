@@ -101,6 +101,25 @@ void CalculaMedidaTiger17(num valor_c) {
   ]));
 }
 
+void CalculaMedidaTiger22(num valor_c) {
+  /*
+    95 - 46
+    y   - x
+    x = (46*y)/95
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(95, 46, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Tiger imagem 22',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 void CalculaMedidaTiger(num valor_c) {
   /*
     119 - 200
@@ -161,9 +180,10 @@ void CalculaMedidaTiger3(num valor_c) {
 main(List<String> args) {
   /* ------------------------------ */
   /* Tiger */
-  CalculaMedidaTiger(17);
+  CalculaMedidaTiger(5);
+  // CalculaMedidaTiger22(13);
   // CalculaMedidaTiger2(15);
-  // CalculaMedidaTiger3(3.5);
+  // CalculaMedidaTiger3(5);
   // CalculaMedidaTiger17(8);
   /* ------------------------------ */
   // CalculaPerimetroCirculo(23);
