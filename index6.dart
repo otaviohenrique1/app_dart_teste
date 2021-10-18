@@ -103,15 +103,15 @@ void CalculaMedidaTiger17(num valor_c) {
 
 void CalculaMedidaTiger22(num valor_c) {
   /*
-    95 - 46
+    65 - 54
     y   - x
-    x = (46*y)/95
+    x = (54*y)/65
     a - b
     c - x
     x = (b*c)/a
   */
   num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(95, 46, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(65, 54, valorImagem);
   print(Calculadora.FormataCalculo([
     'Tiger imagem 22',
     valorImagem.toString(),
@@ -180,9 +180,9 @@ void CalculaMedidaTiger3(num valor_c) {
 main(List<String> args) {
   /* ------------------------------ */
   /* Tiger */
-  CalculaMedidaTiger(5);
-  // CalculaMedidaTiger22(13);
-  // CalculaMedidaTiger2(15);
+  CalculaMedidaTiger(27);
+  // CalculaMedidaTiger22(32.5);
+  // CalculaMedidaTiger2(5);
   // CalculaMedidaTiger3(5);
   // CalculaMedidaTiger17(8);
   /* ------------------------------ */
