@@ -15,11 +15,13 @@ void CalculaMedidaPanther2(num valor_c) {
     c - x
     x = (b*c)/a
   */
-  num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(151, 126, valorImagem);
+  num valorImagem2 = valor_c;
+  num valorImagem1 = Calculadora.CalculaMedida(151, 126, valorImagem2);
+  num resultadoImagem = Calculadora.CalculaMedida(126, 200, valorImagem1);
   print(Calculadora.FormataCalculo([
-    'Panther imagem 2',
-    valorImagem.toString(),
+    'Panther',
+    valorImagem2.toString(),
+    valorImagem1.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
   ]));
@@ -53,11 +55,13 @@ void CalculaMedidaJadgpanther2(num valor_c) {
     c - x
     x = (b*c)/a
   */
-  num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(126, 172, valorImagem);
+  num valorImagem2 = valor_c;
+  num valorImagem1 = Calculadora.CalculaMedida(126, 172, valorImagem2);
+  num resultadoImagem = Calculadora.CalculaMedida(172, 200, valorImagem1);
   print(Calculadora.FormataCalculo([
-    'Jadgpanther imagem 2',
-    valorImagem.toString(),
+    'Jadgpanther',
+    valorImagem2.toString(),
+    valorImagem1.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
   ]));
@@ -91,11 +95,13 @@ void CalculaMedidaTiger17(num valor_c) {
     c - x
     x = (b*c)/a
   */
-  num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(170, 104, valorImagem);
+  num valorImagem17 = valor_c;
+  num valorImagem1 = Calculadora.CalculaMedida(170, 104, valorImagem17);
+  num resultadoImagem = Calculadora.CalculaMedida(119, 200, valorImagem1);
   print(Calculadora.FormataCalculo([
-    'Tiger imagem 17',
-    valorImagem.toString(),
+    'Tiger',
+    valorImagem17.toString(),
+    valorImagem1.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
   ]));
@@ -110,11 +116,55 @@ void CalculaMedidaTiger22(num valor_c) {
     c - x
     x = (b*c)/a
   */
-  num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(65, 54, valorImagem);
+  num valorImagem22 = valor_c;
+  num valorImagem1 = Calculadora.CalculaMedida(65, 54, valorImagem22);
+  num resultadoImagem = Calculadora.CalculaMedida(119, 200, valorImagem1);
   print(Calculadora.FormataCalculo([
-    'Tiger imagem 22',
-    valorImagem.toString(),
+    'Tiger',
+    valorImagem22.toString(),
+    valorImagem1.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaTiger2(num valor_c) {
+  /*
+    104 - 119
+    y   - x
+    x = (119*y)/104
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem2 = valor_c;
+  num valorImagem1 = Calculadora.CalculaMedida(104, 119, valorImagem2);
+  num resultadoImagem = Calculadora.CalculaMedida(119, 200, valorImagem1);
+  print(Calculadora.FormataCalculo([
+    'Tiger',
+    valorImagem2.toString(),
+    valorImagem1.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaTiger3(num valor_c) {
+  /*
+    102 - 119
+    y   - x
+    x = (119*y)/104
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem3 = valor_c;
+  num valorImagem1 = Calculadora.CalculaMedida(102, 119, valorImagem3);
+  num resultadoImagem = Calculadora.CalculaMedida(119, 200, valorImagem1);
+  print(Calculadora.FormataCalculo([
+    'Tiger',
+    valorImagem3.toString(),
+    valorImagem1.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
   ]));
@@ -139,50 +189,12 @@ void CalculaMedidaTiger(num valor_c) {
   ]));
 }
 
-void CalculaMedidaTiger2(num valor_c) {
-  /*
-    104 - 119
-    y   - x
-    x = (119*y)/104
-    a - b
-    c - x
-    x = (b*c)/a
-  */
-  num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(104, 119, valorImagem);
-  print(Calculadora.FormataCalculo([
-    'Tiger imagem 2',
-    valorImagem.toString(),
-    resultadoImagem.toString(),
-    resultadoImagem.round().toString()
-  ]));
-}
-
-void CalculaMedidaTiger3(num valor_c) {
-  /*
-    102 - 119
-    y   - x
-    x = (119*y)/104
-    a - b
-    c - x
-    x = (b*c)/a
-  */
-  num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(102, 119, valorImagem);
-  print(Calculadora.FormataCalculo([
-    'Tiger imagem 3',
-    valorImagem.toString(),
-    resultadoImagem.toString(),
-    resultadoImagem.round().toString()
-  ]));
-}
-
 main(List<String> args) {
   /* ------------------------------ */
   /* Tiger */
-  CalculaMedidaTiger(27);
+  CalculaMedidaTiger(22);
   // CalculaMedidaTiger22(32.5);
-  // CalculaMedidaTiger2(5);
+  // CalculaMedidaTiger2(19);
   // CalculaMedidaTiger3(5);
   // CalculaMedidaTiger17(8);
   /* ------------------------------ */
