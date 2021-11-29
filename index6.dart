@@ -189,13 +189,35 @@ void CalculaMedidaTiger(num valor_c) {
   ]));
 }
 
+void CalculaMedidaDassaultMirage2000(num valor_c) {
+  /*
+    175 - 300
+    y   - x
+    x = (200*y)/119
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(175, 300, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Dassault Mirage 2000',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 main(List<String> args) {
   /* ------------------------------ */
+  /* Dassault Mirage 2000 */
+  CalculaMedidaDassaultMirage2000(11.5);
+  /* ------------------------------ */
   /* Tiger */
-  CalculaMedidaTiger(15);
+  // CalculaMedidaTiger(7.5);
   // CalculaMedidaTiger22(32.5);
   // CalculaMedidaTiger2(1.5);
-  // CalculaMedidaTiger3(3);
+  // CalculaMedidaTiger3(15);
   // CalculaMedidaTiger17(8);
   /* ------------------------------ */
   // CalculaPerimetroCirculo(23);
