@@ -193,7 +193,7 @@ void CalculaMedidaDassaultMirage2000(num valor_c) {
   /*
     175 - 300
     y   - x
-    x = (200*y)/119
+    x = (300*y)/175
     a - b
     c - x
     x = (b*c)/a
@@ -208,13 +208,61 @@ void CalculaMedidaDassaultMirage2000(num valor_c) {
   ]));
 }
 
+void CalculaMedidaBRDM2Imagem3(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem3 = Calculadora.CalculaMedida(148, 183, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(183, 200, resultadoImagem3);
+  print(Calculadora.FormataCalculo([
+    'BRDM-2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaBRDM2Imagem2(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem2 = Calculadora.CalculaMedida(125, 183, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(183, 200, resultadoImagem2);
+  print(Calculadora.FormataCalculo([
+    'BRDM-2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaBRDM2Imagem1(num valor_c) {
+  /*
+    183 - 200
+    y   - x
+    x = (200*y)/183
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(183, 200, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'BRDM-2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 main(List<String> args) {
   /* ------------------------------ */
   /* Dassault Mirage 2000 */
-  CalculaMedidaDassaultMirage2000(11.5);
+  // CalculaMedidaDassaultMirage2000(11.5);
+  /* ------------------------------ */
+  /* BRDM-2 */
+  CalculaMedidaBRDM2Imagem1(15);
+  // CalculaMedidaBRDM2Imagem3(15);
+  // CalculaMedidaBRDM2Imagem2(15);
   /* ------------------------------ */
   /* Tiger */
-  // CalculaMedidaTiger(7.5);
+  // CalculaMedidaTiger(25);
   // CalculaMedidaTiger22(32.5);
   // CalculaMedidaTiger2(1.5);
   // CalculaMedidaTiger3(15);
