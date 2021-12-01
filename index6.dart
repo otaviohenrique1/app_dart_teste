@@ -46,46 +46,6 @@ void CalculaMedidaPanther(num valor_c) {
   ]));
 }
 
-void CalculaMedidaJadgpanther2(num valor_c) {
-  /*
-    126 - 172
-    y   - x
-    x = (172*y)/126
-    a - b
-    c - x
-    x = (b*c)/a
-  */
-  num valorImagem2 = valor_c;
-  num valorImagem1 = Calculadora.CalculaMedida(126, 172, valorImagem2);
-  num resultadoImagem = Calculadora.CalculaMedida(172, 200, valorImagem1);
-  print(Calculadora.FormataCalculo([
-    'Jadgpanther',
-    valorImagem2.toString(),
-    valorImagem1.toString(),
-    resultadoImagem.toString(),
-    resultadoImagem.round().toString()
-  ]));
-}
-
-void CalculaMedidaJadgpanther(num valor_c) {
-  /*
-    172 - 200
-    y   - x
-    x = (200*y)/172
-    a - b
-    c - x
-    x = (b*c)/a
-  */
-  num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(172, 200, valorImagem);
-  print(Calculadora.FormataCalculo([
-    'Jadgpanther',
-    valorImagem.toString(),
-    resultadoImagem.toString(),
-    resultadoImagem.round().toString()
-  ]));
-}
-
 void CalculaMedidaTiger17(num valor_c) {
   /*
     170 - 104
@@ -208,9 +168,45 @@ void CalculaMedidaDassaultMirage2000(num valor_c) {
   ]));
 }
 
+void CalculaMedidaBRDM2Imagem6(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem6 = Calculadora.CalculaMedida(148, 183, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(183, 200, resultadoImagem6);
+  print(Calculadora.FormataCalculo([
+    'BRDM-2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaBRDM2Imagem5(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem5 = Calculadora.CalculaMedida(125, 183, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(183, 200, resultadoImagem5);
+  print(Calculadora.FormataCalculo([
+    'BRDM-2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaBRDM2Imagem4(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem4 = Calculadora.CalculaMedida(193.22, 183, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(183, 200, resultadoImagem4);
+  print(Calculadora.FormataCalculo([
+    'BRDM-2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 void CalculaMedidaBRDM2Imagem3(num valor_c) {
   num valorImagem = valor_c;
-  num resultadoImagem3 = Calculadora.CalculaMedida(148, 183, valorImagem);
+  num resultadoImagem3 = Calculadora.CalculaMedida(195.83, 183, valorImagem);
   num resultadoImagem = Calculadora.CalculaMedida(183, 200, resultadoImagem3);
   print(Calculadora.FormataCalculo([
     'BRDM-2',
@@ -222,8 +218,8 @@ void CalculaMedidaBRDM2Imagem3(num valor_c) {
 
 void CalculaMedidaBRDM2Imagem2(num valor_c) {
   num valorImagem = valor_c;
-  num resultadoImagem2 = Calculadora.CalculaMedida(125, 183, valorImagem);
-  num resultadoImagem = Calculadora.CalculaMedida(183, 200, resultadoImagem2);
+  num resultadoImagem3 = Calculadora.CalculaMedida(148, 188, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(183, 200, resultadoImagem3);
   print(Calculadora.FormataCalculo([
     'BRDM-2',
     valorImagem.toString(),
@@ -234,7 +230,7 @@ void CalculaMedidaBRDM2Imagem2(num valor_c) {
 
 void CalculaMedidaBRDM2Imagem1(num valor_c) {
   /*
-    183 - 200
+    188 - 200
     y   - x
     x = (200*y)/183
     a - b
@@ -242,9 +238,49 @@ void CalculaMedidaBRDM2Imagem1(num valor_c) {
     x = (b*c)/a
   */
   num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(183, 200, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(188, 200, valorImagem);
   print(Calculadora.FormataCalculo([
     'BRDM-2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaJadgpanther2(num valor_c) {
+  /*
+    126 - 172
+    y   - x
+    x = (172*y)/126
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem2 = valor_c;
+  num valorImagem1 = Calculadora.CalculaMedida(126, 172, valorImagem2);
+  num resultadoImagem = Calculadora.CalculaMedida(172, 200, valorImagem1);
+  print(Calculadora.FormataCalculo([
+    'Jadgpanther',
+    valorImagem2.toString(),
+    valorImagem1.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaJadgpanther(num valor_c) {
+  /*
+    172 - 200
+    y   - x
+    x = (200*y)/172
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(172, 200, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Jadgpanther',
     valorImagem.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
@@ -256,11 +292,6 @@ main(List<String> args) {
   /* Dassault Mirage 2000 */
   // CalculaMedidaDassaultMirage2000(11.5);
   /* ------------------------------ */
-  /* BRDM-2 */
-  CalculaMedidaBRDM2Imagem1(15);
-  // CalculaMedidaBRDM2Imagem3(15);
-  // CalculaMedidaBRDM2Imagem2(15);
-  /* ------------------------------ */
   /* Tiger */
   // CalculaMedidaTiger(25);
   // CalculaMedidaTiger22(32.5);
@@ -271,11 +302,19 @@ main(List<String> args) {
   // CalculaPerimetroCirculo(23);
   /* ------------------------------ */
   /* Jadgpanther */
-  // CalculaMedidaJadgpanther(23.72);
-  // CalculaMedidaJadgpanther2(109);
+  // CalculaMedidaJadgpanther(47);
+  CalculaMedidaJadgpanther2(48);
   /* ------------------------------ */
   /* Panther */
   // CalculaMedidaPanther(46);
   // CalculaMedidaPanther2(51);
+  /* ------------------------------ */
+  /* BRDM-2 */
+  // CalculaMedidaBRDM2Imagem1(74);
+  // CalculaMedidaBRDM2Imagem3(15);
+  // CalculaMedidaBRDM2Imagem2(15);
+  // CalculaMedidaBRDM2Imagem4(74);
+  // CalculaMedidaBRDM2Imagem5(15);
+  // CalculaMedidaBRDM2Imagem6(15);
   /* ------------------------------ */
 }
