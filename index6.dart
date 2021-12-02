@@ -247,6 +247,25 @@ void CalculaMedidaBRDM2Imagem1(num valor_c) {
   ]));
 }
 
+void CalculaMedidaBRDM2Imagem(num valor_c) {
+  /*
+    188 - 200
+    y   - x
+    x = (200*y)/183
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(187, 200, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'BRDM-2',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 void CalculaMedidaJadgpanther2(num valor_c) {
   /*
     126 - 172
@@ -287,7 +306,53 @@ void CalculaMedidaJadgpanther(num valor_c) {
   ]));
 }
 
+void CalculaMedidaPanzer3Imagem2A(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem2 = Calculadora.CalculaMedida(261, 163, valorImagem);
+  num resultadoImagem = Calculadora.CalculaMedida(163, 200, resultadoImagem2);
+  print(Calculadora.FormataCalculo([
+    'Panzer 3',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaPanzer3Imagem2(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(261, 163, valor_c);
+  print(Calculadora.FormataCalculo([
+    'Panzer 3',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaPanzer3Imagem1(num valor_c) {
+  /*
+    163 - 200
+    y   - x
+    x = (200*y)/163
+    a - b
+    c - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(163, 200, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Panzer 3',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 main(List<String> args) {
+  /* ------------------------------ */
+  /* Panzer 3 */
+  CalculaMedidaPanzer3Imagem1(16);
+  CalculaMedidaPanzer3Imagem2(25);
   /* ------------------------------ */
   /* Dassault Mirage 2000 */
   // CalculaMedidaDassaultMirage2000(11.5);
@@ -303,7 +368,7 @@ main(List<String> args) {
   /* ------------------------------ */
   /* Jadgpanther */
   // CalculaMedidaJadgpanther(47);
-  CalculaMedidaJadgpanther2(48);
+  // CalculaMedidaJadgpanther2(48);
   /* ------------------------------ */
   /* Panther */
   // CalculaMedidaPanther(46);
