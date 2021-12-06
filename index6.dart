@@ -337,6 +337,17 @@ void CalculaMedidaSug3Imagem1(num valor_c) {
   ]));
 }
 
+void CalculaMedidaPanzer3Roda4(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(31, 17, valor_c);
+  print(Calculadora.FormataCalculo([
+    'Panzer 3 - Roda 4',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 void CalculaMedidaPanzer3Imagem3(num valor_c) {
   num valorImagem = valor_c;
   num resultadoImagem = Calculadora.CalculaMedida(162, 163, valor_c);
@@ -381,12 +392,13 @@ void CalculaMedidaPanzer3Imagem1(num valor_c) {
 main(List<String> args) {
   /* ------------------------------ */
   /* Panzer 3 */
-  CalculaMedidaPanzer3Imagem1(2);
-  // CalculaMedidaPanzer3Imagem2(14);
+  CalculaMedidaPanzer3Imagem1(17);
+  // CalculaMedidaPanzer3Imagem2(4);
   // CalculaMedidaPanzer3Imagem3(14);
+  // CalculaMedidaPanzer3Roda4(2);
   /* ------------------------------ */
   /* Stug 3 */
-  // CalculaMedidaSug3Imagem1(3);
+  // CalculaMedidaSug3Imagem1(46);
   /* ------------------------------ */
   /* Dassault Mirage 2000 */
   // CalculaMedidaDassaultMirage2000(11.5);
