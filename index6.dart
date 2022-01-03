@@ -319,18 +319,45 @@ void CalculaMedidaPanzer3Imagem2A(num valor_c) {
 }
 
 void CalculaMedidaSug3Imagem1(num valor_c) {
-  /*
-    158 - 200
-    y   - x
-    x = (200*y)/158
-    a - b
-    c - x
-    x = (b*c)/a
-  */
+  num valorImagem = valor_c;
+  num resultadoImagem1 = Calculadora.CalculaMedida(163, 158, valorImagem);
+  num resultadoImagem2 = Calculadora.CalculaMedida(158, 200, resultadoImagem1);
+  print(Calculadora.FormataCalculo([
+    'Stug 3',
+    valorImagem.toString(),
+    resultadoImagem1.toString(),
+    resultadoImagem2.toString(),
+    resultadoImagem2.round().toString()
+  ]));
+}
+
+void CalculaMedidaSug3Imagem2(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(163, 158, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Stug 3',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaSug3Imagem3(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(163, 200, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Stug 3',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaSug3Imagem4(num valor_c) {
   num valorImagem = valor_c;
   num resultadoImagem = Calculadora.CalculaMedida(158, 200, valorImagem);
   print(Calculadora.FormataCalculo([
-    'Panzer 3',
+    'Stug 3',
     valorImagem.toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
@@ -425,7 +452,7 @@ void CalculaMedidaPanzer3Imagem1(num valor_c) {
 main(List<String> args) {
   /* ------------------------------ */
   /* Panzer 3 */
-  CalculaMedidaPanzer3Imagem1(3);
+  CalculaMedidaPanzer3Imagem1(9);
   // CalculaMedidaPanzer3Imagem2(17);
   // CalculaMedidaPanzer3Imagem3(14);
   // CalculaMedidaPanzer3Roda1(2);
@@ -434,7 +461,7 @@ main(List<String> args) {
   // CalculaMedidaPanzer3Roda4(2);
   /* ------------------------------ */
   /* Stug 3 */
-  // CalculaMedidaSug3Imagem1(46);
+  // CalculaMedidaSug3Imagem1(22);
   /* ------------------------------ */
   /* Dassault Mirage 2000 */
   // CalculaMedidaDassaultMirage2000(11.5);
