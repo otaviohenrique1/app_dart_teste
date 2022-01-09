@@ -453,7 +453,7 @@ main(List<String> args) {
   /* ------------------------------ */
   /* Panzer 3 */
   CalculaMedidaPanzer3Imagem1(9);
-  // CalculaMedidaPanzer3Imagem2(17);
+  // CalculaMedidaPanzer3Imagem2(15);
   // CalculaMedidaPanzer3Imagem3(14);
   // CalculaMedidaPanzer3Roda1(2);
   // CalculaMedidaPanzer3Roda2(2);
@@ -461,7 +461,7 @@ main(List<String> args) {
   // CalculaMedidaPanzer3Roda4(2);
   /* ------------------------------ */
   /* Stug 3 */
-  // CalculaMedidaSug3Imagem1(22);
+  // CalculaMedidaSug3Imagem1(25);
   /* ------------------------------ */
   /* Dassault Mirage 2000 */
   // CalculaMedidaDassaultMirage2000(11.5);
