@@ -454,8 +454,8 @@ void CalculaMedidaPanzer3Imagem1(num valor_c) {
 main(List<String> args) {
   /* ------------------------------ */
   /* Panzer 3 */
-  // CalculaMedidaPanzer3Imagem1(10);
-  // CalculaMedidaPanzer3Imagem2(21);
+  // CalculaMedidaPanzer3Imagem1(22);
+  // CalculaMedidaPanzer3Imagem2(39);
   // CalculaMedidaPanzer3Imagem3(14);
   // CalculaMedidaPanzer3Roda1(2);
   // CalculaMedidaPanzer3Roda2(2);
@@ -463,8 +463,8 @@ main(List<String> args) {
   // CalculaMedidaPanzer3Roda4(2);
   /* ------------------------------ */
   /* Stug 3 */
-  CalculaMedidaSug3Imagem1(2);
-  // CalculaMedidaSug3Imagem2(76);
+  // CalculaMedidaSug3Imagem1(2);
+  CalculaMedidaSug3Imagem2(5);
   /* ------------------------------ */
   /* Dassault Mirage 2000 */
   // CalculaMedidaDassaultMirage2000(11.5);
