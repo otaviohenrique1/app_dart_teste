@@ -170,3 +170,9 @@ class Calculadora {
     return texto;
   }
 }
+
+void CalculaPerimetroCirculo(num valor) {
+  num perimetroCirculo = Calculadora.PerimetroCirculo(valor);
+  String resultadoImagem = perimetroCirculo.round().toString();
+  print(resultadoImagem);
+}
