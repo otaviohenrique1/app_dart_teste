@@ -153,10 +153,14 @@ void CalculaMedidaPanzer3Roda4(num valor_c) {
 
 void CalculaMedidaPanzer3Roda3(num valor_c) {
   num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(45.5, 26.5, valor_c);
+  num resultadoImagemRoda3 = Calculadora.CalculaMedida(45.5, 26.5, valor_c);
+  num resultadoImagem =
+      Calculadora.CalculaMedida(163, 200, resultadoImagemRoda3);
   print(Calculadora.FormataCalculo([
     'Panzer 3 - Roda 3',
     valorImagem.toString(),
+    resultadoImagemRoda3.toString(),
+    resultadoImagemRoda3.round().toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
   ]));
@@ -164,10 +168,14 @@ void CalculaMedidaPanzer3Roda3(num valor_c) {
 
 void CalculaMedidaPanzer3Roda2(num valor_c) {
   num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(43, 23, valor_c);
+  num resultadoImagemRoda2 = Calculadora.CalculaMedida(43, 23, valor_c);
+  num resultadoImagem =
+      Calculadora.CalculaMedida(163, 200, resultadoImagemRoda2);
   print(Calculadora.FormataCalculo([
     'Panzer 3 - Roda 2',
     valorImagem.toString(),
+    resultadoImagemRoda2.toString(),
+    resultadoImagemRoda2.round().toString(),
     resultadoImagem.toString(),
     resultadoImagem.round().toString()
   ]));

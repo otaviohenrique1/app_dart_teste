@@ -6,8 +6,8 @@ main(List<String> args) {
   // CalculaMedidaPanzer3Imagem1(16.5);
   // CalculaMedidaPanzer3Imagem2(39);
   // CalculaMedidaPanzer3Imagem3(14);
-  CalculaMedidaPanzer3Roda1(4);
-  // CalculaMedidaPanzer3Roda2(2);
+  // CalculaMedidaPanzer3Roda1(18);
+  CalculaMedidaPanzer3Roda2(3);
   // CalculaMedidaPanzer3Roda3(2);
   // CalculaMedidaPanzer3Roda4(2);
   /* ------------------------------ */
