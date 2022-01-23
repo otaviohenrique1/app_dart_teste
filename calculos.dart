@@ -142,7 +142,9 @@ void CalculaMedidaStug3Imagem4(num valor_c) {
 
 void CalculaMedidaPanzer3Roda4(num valor_c) {
   num valorImagem = valor_c;
-  num resultadoImagem = Calculadora.CalculaMedida(31, 17, valor_c);
+  num resultadoImagemRoda4 = Calculadora.CalculaMedida(31, 17, valor_c);
+  num resultadoImagem =
+      Calculadora.CalculaMedida(163, 200, resultadoImagemRoda4);
   print(Calculadora.FormataCalculo([
     'Panzer 3 - Roda 4',
     valorImagem.toString(),
