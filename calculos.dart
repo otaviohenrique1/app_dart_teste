@@ -238,3 +238,37 @@ void CalculaMedidaPanzer3Imagem1(num valor_c) {
     resultadoImagem.round().toString()
   ]));
 }
+
+void CalculaMedidaBTR80Imagem1(num valor_c) {
+  /*
+    159.5 - x
+    250   - y
+    x = (250*x)/159.5
+    a - c
+    b - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(159.5, 250, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'BTR-80',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaBTR80Imagem3(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem3 = Calculadora.CalculaMedida(285.5, 159.5, valorImagem);
+  num resultadoImagem1 =
+      Calculadora.CalculaMedida(159.5, 250, resultadoImagem3);
+  print(Calculadora.FormataCalculo([
+    'BTR-80',
+    valorImagem.toString(),
+    resultadoImagem3.toString(),
+    resultadoImagem3.round().toString(),
+    resultadoImagem1.toString(),
+    resultadoImagem1.round().toString()
+  ]));
+}
