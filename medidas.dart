@@ -16,8 +16,9 @@ main(List<String> args) {
   // CalculaMedidaStug3Imagem2(5);
   /* ------------------------------ */
   /* BTR-80 */
-  CalculaMedidaBTR80Imagem1(6);
-  // CalculaMedidaBTR80Imagem3(57);
+  CalculaMedidaBTR80Imagem1(24);
+  // CalculaMedidaBTR80Imagem2(16);
+  // CalculaMedidaBTR80Imagem3(42);
   /* ------------------------------ */
   /* Jadgpanther */
   // CalculaMedidaJadgpanther(47);

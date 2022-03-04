@@ -258,6 +258,21 @@ void CalculaMedidaBTR80Imagem1(num valor_c) {
   ]));
 }
 
+void CalculaMedidaBTR80Imagem2(num valor_c) {
+  num valorImagem = valor_c;
+  num resultadoImagem3 = Calculadora.CalculaMedida(285.5, 148.5, valorImagem);
+  num resultadoImagem1 =
+      Calculadora.CalculaMedida(159.5, 250, resultadoImagem3);
+  print(Calculadora.FormataCalculo([
+    'BTR-80',
+    valorImagem.toString(),
+    resultadoImagem3.toString(),
+    resultadoImagem3.round().toString(),
+    resultadoImagem1.toString(),
+    resultadoImagem1.round().toString()
+  ]));
+}
+
 void CalculaMedidaBTR80Imagem3(num valor_c) {
   num valorImagem = valor_c;
   num resultadoImagem3 = Calculadora.CalculaMedida(285.5, 159.5, valorImagem);
