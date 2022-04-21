@@ -3,7 +3,7 @@ import 'calculos.dart';
 main(List<String> args) {
   /* ------------------------------ */
   /* Panzer 3 */
-  // CalculaMedidaPanzer3Imagem1(9.5);
+  // CalculaMedidaPanzer3Imagem1(11.5);
   // CalculaMedidaPanzer3Imagem2(39);
   // CalculaMedidaPanzer3Imagem3(14);
   // CalculaMedidaPanzer3Roda1(18);
@@ -12,13 +12,16 @@ main(List<String> args) {
   // CalculaMedidaPanzer3Roda4(7);
   /* ------------------------------ */
   /* Stug 3 */
-  // CalculaMedidaStug3Imagem1(15);
+  // CalculaMedidaStug3Imagem1(5);
   // CalculaMedidaStug3Imagem2(5);
   /* ------------------------------ */
+  /* OptimusPrimeCaminhao */
+  CalculaMedidaOptimusPrimeCaminhaoImagem1(68);
+  /* ------------------------------ */
   /* BTR-80 */
-  CalculaMedidaBTR80Imagem1(24);
-  // CalculaMedidaBTR80Imagem2(16);
-  // CalculaMedidaBTR80Imagem3(42);
+  CalculaMedidaBTR80Imagem1(8);
+  // CalculaMedidaBTR80Imagem2(2);
+  // CalculaMedidaBTR80Imagem3(8);
   /* ------------------------------ */
   /* Jadgpanther */
   // CalculaMedidaJadgpanther(47);

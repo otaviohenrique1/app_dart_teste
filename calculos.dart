@@ -239,6 +239,25 @@ void CalculaMedidaPanzer3Imagem1(num valor_c) {
   ]));
 }
 
+void CalculaMedidaOptimusPrimeCaminhaoImagem1(num valor_c) {
+  /*
+    192 - x
+    300 - y
+    x = (300*x)/192
+    a - c
+    b - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(192, 300, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'OptimusPrimeCaminhao',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
 void CalculaMedidaBTR80Imagem1(num valor_c) {
   /*
     159.5 - x
