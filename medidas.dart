@@ -16,10 +16,13 @@ main(List<String> args) {
   // CalculaMedidaStug3Imagem2(5);
   /* ------------------------------ */
   /* OptimusPrimeCaminhao */
-  CalculaMedidaOptimusPrimeCaminhaoImagem1(68);
+  // CalculaMedidaOptimusPrimeCaminhaoImagem1(26);
+  /* ------------------------------ */
+  /* UssKelvins */
+  CalculaMedidaUssKelvinImagem1(20);
   /* ------------------------------ */
   /* BTR-80 */
-  CalculaMedidaBTR80Imagem1(8);
+  // CalculaMedidaBTR80Imagem1(8);
   // CalculaMedidaBTR80Imagem2(2);
   // CalculaMedidaBTR80Imagem3(8);
   /* ------------------------------ */

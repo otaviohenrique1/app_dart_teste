@@ -306,3 +306,22 @@ void CalculaMedidaBTR80Imagem3(num valor_c) {
     resultadoImagem1.round().toString()
   ]));
 }
+
+void CalculaMedidaUssKelvinImagem1(num valor_c) {
+  /*
+    160 - x
+    300 - y
+    x = (300*x)/160
+    a - c
+    b - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(160, 300, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'UssKelvin',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
