@@ -325,3 +325,108 @@ void CalculaMedidaUssKelvinImagem1(num valor_c) {
     resultadoImagem.round().toString()
   ]));
 }
+
+void CalculaMedidaFletcherClassDestroyerImagem1(num valor_c) {
+  /*
+    225 - x
+    600 - y
+    x = (600*x)/225
+    a - c
+    b - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(225, 600, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'FletcherClassDestroyer',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaLeopard2Imagem1(num valor_c) {
+  /*
+    154 - x
+    300 - y
+    x = (300*x)/154
+    a - c
+    b - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(154, 300, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Leopard2Imagem1',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaLeopard2Imagem4_1(num valor_c) {
+  /*
+    127 - x
+    154 - y
+    x = (154*y)/127
+    a - c
+    b - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem = Calculadora.CalculaMedida(127, 154, valorImagem);
+  print(Calculadora.FormataCalculo([
+    'Leopard2Imagem4_1',
+    valorImagem.toString(),
+    resultadoImagem.toString(),
+    resultadoImagem.round().toString()
+  ]));
+}
+
+void CalculaMedidaLeopard2Imagem4(num valor_c) {
+  /*
+    127 - x1
+    154 - y1
+    x1 = (154*y1)/127
+    154 - x1
+    300 - x2
+    x2 = (300*x1)/154
+    a - c
+    b - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem4 = Calculadora.CalculaMedida(127, 154, valorImagem);
+  num resultadoImagem1 = Calculadora.CalculaMedida(154, 300, resultadoImagem4);
+  print(Calculadora.FormataCalculo([
+    'Leopard2Imagem4',
+    valorImagem.toString(),
+    resultadoImagem4.toString(),
+    resultadoImagem1.toString(),
+    resultadoImagem1.round().toString()
+  ]));
+}
+
+void CalculaMedidaLeopard2Imagem5(num valor_c) {
+  /*
+    103 - x1
+    154 - y1
+    x1 = (154*y1)/103
+    154 - x1
+    300 - x2
+    x2 = (300*x1)/154
+    a - c
+    b - x
+    x = (b*c)/a
+  */
+  num valorImagem = valor_c;
+  num resultadoImagem5 = Calculadora.CalculaMedida(103, 154, valorImagem);
+  num resultadoImagem1 = Calculadora.CalculaMedida(154, 300, resultadoImagem5);
+  print(Calculadora.FormataCalculo([
+    'Leopard2Imagem5',
+    valorImagem.toString(),
+    resultadoImagem5.toString(),
+    resultadoImagem1.toString(),
+    resultadoImagem1.round().toString()
+  ]));
+}
