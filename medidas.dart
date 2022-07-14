@@ -25,10 +25,10 @@ main(List<String> args) {
   // CalculaMedidaFletcherClassDestroyerImagem1(33);
   /* ------------------------------ */
   /* Leopard2 */
-  CalculaMedidaLeopard2Imagem1(43);
+  CalculaMedidaLeopard2Imagem1(8);
   // CalculaMedidaLeopard2Imagem1(13);
-  // CalculaMedidaLeopard2Imagem4_1(99);
-  // CalculaMedidaLeopard2Imagem4(36);
+  // CalculaMedidaLeopard2Imagem4_1(7.5);
+  // CalculaMedidaLeopard2Imagem4(7.5);
   // CalculaMedidaLeopard2Imagem5(18);
   /* ------------------------------ */
   /* BTR-80 */
