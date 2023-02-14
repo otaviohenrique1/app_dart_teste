@@ -21,9 +21,9 @@ class Calculadora {
   }
 
   static num Teorema_de_Pitagoras2({
-    num cateto1: 0,
-    num cateto2: 0,
-    num hipotenusa: 0,
+    num cateto1 = 0,
+    num cateto2 = 0,
+    num hipotenusa = 0,
   }) {
     if (hipotenusa == 0) {
       return sqrt((pow(cateto1, 2) + pow(cateto2, 2)));
