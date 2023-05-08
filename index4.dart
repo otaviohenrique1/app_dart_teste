@@ -15,26 +15,41 @@
 //   return resultado;
 // }
 
-List<String> divideValorTotalEmParcelas(
-    num valorTotal, int quantidadeParcelas) {
-  List<String> resultado = List.generate(quantidadeParcelas, (index) {
-    var parcela = index + 1;
-    var valor = (valorTotal / parcela).toStringAsFixed(2);
-    return "$parcela x R\$ $valor (Sem juros)";
-  });
-  return ["Preço à vista"] + resultado;
-}
+// List<String> divideValorTotalEmParcelas(
+//     num valorTotal, int quantidadeParcelas) {
+//   List<String> resultado = List.generate(quantidadeParcelas, (index) {
+//     var parcela = index + 1;
+//     var valor = (valorTotal / parcela).toStringAsFixed(2);
+//     return "$parcela x R\$ $valor (Sem juros)";
+//   });
+//   return ["Preço à vista"] + resultado;
+// }
 
-List<String> valorParcelas(num valorTotal, int quantidadeParcelas) {
-  List<String> resultado = List.generate(quantidadeParcelas, (index) {
-    var parcela = index + 1;
-    var valor = (valorTotal / quantidadeParcelas).toStringAsFixed(2);
-    return "$parcela x R\$ $valor (Sem juros)";
-  });
-  return ["Preço à vista"] + resultado;
-}
+// List<String> valorParcelas(num valorTotal, int quantidadeParcelas) {
+//   List<String> resultado = List.generate(quantidadeParcelas, (index) {
+//     var parcela = index + 1;
+//     var valor = (valorTotal / quantidadeParcelas).toStringAsFixed(2);
+//     return "$parcela x R\$ $valor (Sem juros)";
+//   });
+//   return ["Preço à vista"] + resultado;
+// }
 
 main(List<String> args) {
+  List<String> listaTeste = List.generate(100, (index) {
+    int numero = index + 1;
+    if ((numero) < 10) {
+      return "00${index + 1}";
+    } else if ((index + 1) >= 10 && (index + 1) < 100) {
+      return "0${index + 1}";
+    }
+    return (index + 1).toString();
+  });
+  print(listaTeste);
+  // listaTeste.forEach(
+  //   (element) {
+  //     print(element);
+  //   },
+  // );
   // List<String> b = ["Ano"] +
   //     List.generate(10, (index) {
   //       var data = (DateTime.now().year + index).toString();
@@ -48,10 +63,10 @@ main(List<String> args) {
   //   print(e);
   // }
 
-  var b = valorParcelas(1000, 10);
-  for (var e in b) {
-    print(e);
-  }
+  // var b = valorParcelas(1000, 10);
+  // for (var e in b) {
+  //   print(e);
+  // }
   // print(a.length);
 
   // var b = ["1", "2", "3", "4", "5"];
