@@ -34,17 +34,147 @@
 //   return ["Preço à vista"] + resultado;
 // }
 
+// import 'dart:math';
+
+// class ContatoModel {
+//   ContatoModel({
+//     required this.id,
+//     required this.nome,
+//   });
+
+//   String id;
+//   String nome;
+// }
+
+// import 'dart:math';
+
+// String conta(String valor, Function operacao) {
+//   try {
+//     return operacao(num.parse(valor)).toString();
+//   } catch (erro) {
+//     return erro.toString();
+//   }
+// }
+
+bool isNumber(String data) {
+  final number = num.tryParse(data);
+  return number != null;
+}
+
 main(List<String> args) {
-  List<String> listaTeste = List.generate(100, (index) {
-    int numero = index + 1;
-    if ((numero) < 10) {
-      return "00${index + 1}";
-    } else if ((index + 1) >= 10 && (index + 1) < 100) {
-      return "0${index + 1}";
-    }
-    return (index + 1).toString();
-  });
-  print(listaTeste);
+  print(isNumber('123')); // true
+  print(isNumber('abc')); // false
+  print(isNumber('3.14')); // true
+  // print(conta("10", cos));
+  // print(cos(num.parse("10")));
+  // List<String> lista1 = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
+  // List<String> lista2 = lista1 + ["10"];
+  // String lista3;
+  // lista3 = lista2.join();
+  // List<String> lista4 = lista3.split("");
+  // print("lista 1 => ${lista1.join('+')}");
+  // print("lista 2 => ${lista2.join()}");
+  // print("lista 3 => ${lista3}");
+  // print("lista 3 => ${lista4}");
+  // String texto = "999999";
+  // print(texto.length);
+  // print(lista[9]);
+  // print(lista.length);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+  // print(lista[Random().nextInt(lista.length)]);
+
+  // final List<ContatoModel> usuarios = [];
+  // usuarios.add(ContatoModel(id: "1", nome: "Jeca"));
+  // usuarios.add(ContatoModel(id: "2", nome: "Juca"));
+  // usuarios.add(ContatoModel(id: "3", nome: "Jaca"));
+  // final List<ContatoModel> usuarios2 = usuarios.toList();
+  // var usuarios3 = usuarios.map(
+  //   (e) {
+  //     return {
+  //       "id": e.id,
+  //       "nome": e.nome,
+  //     };
+  //   },
+  // );
+  // print("-----------");
+  // for (var item in usuarios2) {
+  //   // print("${item.id} - ${item.nome}");
+  //   print(item.id);
+  //   print(item.nome);
+  // }
+  // print("-----------");
+  // for (var item in usuarios3) {
+  //   print(item["id"]);
+  //   print(item["nome"]);
+  // }
+  // print("-----------");
+  // String dateTime = DateTime.now().toString();
+  // print(dateTime);
+  // int dia = DateTime.now().day;
+  // int mes = DateTime.now().month;
+  // int ano = DateTime.now().year;
+  // int hora = DateTime.now().hour;
+  // int minuto = DateTime.now().minute;
+  // int segundo = DateTime.now().second;
+  // print("$ano-$mes-$dia $hora:$minuto:$segundo");
+  // String dateTime2 = DateTime.now().toIso8601String();
+  // print(dateTime2);
+  // DateTime dateTime3 = DateTime.parse("2022-05-10");
+  // print(dateTime3);
+  // Random random = Random();
+  // int randomInt = random.nextInt(100);
+  // print(randomInt);
+  // print(DateTime(2023).year - DateTime(1994).year);
+  // List<String> listaTeste = List.generate(100, (index) {
+  //   int numero = index + 1;
+  //   if ((numero) < 10) {
+  //     return "00${index + 1}";
+  //   } else if ((index + 1) >= 10 && (index + 1) < 100) {
+  //     return "0${index + 1}";
+  //   }
+  //   return (index + 1).toString();
+  // });
+  // print(listaTeste);
   // listaTeste.forEach(
   //   (element) {
   //     print(element);
